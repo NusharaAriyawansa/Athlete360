@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #ebeaea;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: #6a0602;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+    width: 220px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#menu .logo h2{
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #4d0f0f;
+    cursor: pointer;
+}
+
+#menu .items li:nth-child(1){
+    border-left: 4px solid #fff;
+}
+
+#menu .items li i{
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i, 
+#menu .items li:hover a
+{
+    color: #F3F4F6;
+    cursor: pointer;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #910702;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#interface .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.i-name{
+    color: #444a53;
+    max-width: 1000px;
+    padding: 20px 40%;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 76px auto;
+    padding: 40px;
+    background-color: #ebeaea;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Dashboard styles */
+.upper-dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dashboard-item {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #decdcd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+.dashboard-item a {
+    text-decoration: none;
+    transition: 0.3s ease;
+    color: #000;
+}
+
+.upper-dashboard :hover {
+    background: #ebedf1;
+    cursor: pointer;
+}
+
+.dashboard-item h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-item p {
+    margin-bottom: 15px;
+}
+
+.announcement {
+    background-color: #d0d0d0;
+    margin: 2em 5em;
+    padding: 2em;
+    border-radius: 1em;
+}
+
+.announcement h4 {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.logout-icon {
+    color: black; /* Changes icon color to black */
+    font-size: 16px; /* Smaller icon size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+.logout-icon:hover {
+    color: rgb(80, 0, 0); /* Changes hover color to grey */
+}
+.logout {
+    margin-left: 1100px; /* This will push the logout icon to the far right */
+}
+
+

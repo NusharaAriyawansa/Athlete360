@@ -1,0 +1,271 @@
+:root{
+    --primary-bg-color: #b23632;
+    --secondary-color: #b23632;
+    --primary-color: #252626;
+    --text-color: #707273;
+    --white-color: #ffffff;
+}
+
+
+/* for tablets and below it */
+@media screen and (max-width: 992px) {
+    /* general css */
+    html{
+        font-size: 55%;
+    }
+    .box-title{
+        font-size: 1.8rem;
+    }
+    /* Header section, need to be refactored */
+
+    .navbar-links{
+        padding-top: 12rem;
+        opacity: 0;
+        z-index: 9;
+        position: absolute;
+        left: 40%;
+  
+        top: 0;
+        background-color: var(--primary-bg-color);
+        width: 60%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        transition: all ease 0.5s;
+    }
+    .navbar-links.active{
+        opacity: 1;
+       
+    }
+   
+    .navbar-link{
+        color: var(--white-color);
+    }
+    .navbar-btn{
+        transform: translateX(-3rem);
+    }
+
+    .responsive-btn{
+        width: 5rem;
+        height: 5rem;
+        display: block;
+        position: absolute;
+        right: 2%;
+        top: 2rem;
+    }
+    .close-btn{
+        display: none;
+        z-index: 10;
+        color: var(--white-color);
+    }
+
+    .close-btn.active{
+        display: block;
+    }
+    .menu-btn{
+        z-index: 11;
+    }
+
+    .menu-btn.remove{
+        display: none;
+    }
+
+    /* Hero section */
+
+  
+    .hero-title{
+        font-size: 3.8rem;
+    }
+    .hero-text{
+        font-size: 1.9rem;
+        color: var(--secondary-color);
+    }
+
+    /* Services section */
+    .box-title{
+        font-size: 1.7rem;
+    }
+}
+
+
+/* media for tablets */
+@media screen and (max-width: 768px) {
+     /* general css */
+    html{
+        font-size: 55%;
+    }
+
+    .box-title{
+        font-size: 2rem;
+    }
+    /* Hero section */
+
+    .hero-title{
+        font-size: 3.6rem;
+    }
+    .hero-text{
+        font-size: 1.6rem;
+    }
+
+    /* Services section */
+    .services-section{
+        padding-top: 7rem;
+    }
+    .box-title{
+        font-size: 1.5rem;
+    }
+    .box-text{
+        font-size: 1.4rem;
+    }
+
+    /* Team section */
+    .team-section__text{
+        font-size: 1.5rem;
+        width: 85%;
+    }
+
+    /* Work section */
+    .work-section__text{
+        width: 85%;
+        font-size: 1.5rem;
+    }
+
+     /* Features section */
+     .features-section_boxes{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .plan-price{
+        font-size: 3.6rem;
+    }
+    .footer-pricing{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 4rem;
+    }
+    .footer-navigation{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .footer-nav__item{
+        font-size: 1.4rem;
+       
+    }
+    .reserved{
+        margin-top: 3rem;
+    }
+}
+
+
+/* media for phone */
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 50%;
+    }
+    .responsive-btn{
+        top: 2.5rem;
+        right: 3%;
+    }
+    /* Hero section */
+      .hero-container{
+        flex-direction: column-reverse;
+       
+    }
+
+    .hero-text__box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-title{
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .hero-text{
+        text-align: center;
+        font-size: 2.1rem;
+        margin: 2rem auto 3rem auto;
+    }
+
+    .hero-btn{
+        align-self: center;
+        width: fit-content;
+    }
+
+      /* Services section */
+    .services-section__boxes{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .box-title{
+        font-size: 2.1rem;
+    }
+    .box-text{
+        font-size: 1.6rem;
+    }
+
+    /* Team section */
+    .team-section{
+        padding-top: 8rem;
+        flex-direction: column;
+    }
+
+    .team-section__left{
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+    .team-section__text{
+        text-align: center;
+    }
+    .team-section__btn{
+        align-self: center;
+    }
+   
+
+}
+
+/* for smaller phones */
+@media screen and (max-width: 450px){
+     /* general css */
+    html{
+        font-size: 50%;
+    }
+    .section-title{
+        font-size: 3.5rem;
+    }
+    .section-text{
+        width: 90%;
+    }
+    /* Work section */
+    .work-section{
+        padding: 8rem 0;
+    }
+    .work-section__text{
+        width: 90%;
+    }
+
+    /* Features section */
+    .features-section_boxes{
+        grid-template-columns: 1fr;
+    }
+    .features-box__text{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+     /* general css */
+    html{
+        font-size: 50%;
+    }
+    .section-title{
+        font-size: 2.8rem;
+    }
+    /* CTA section */
+    .cta-title{
+        font-size: 3.2rem;
+    }
+    .footer-pricing{
+        gap: 4rem;
+    }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #ebeaea;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: #6a0602;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+    width: 220px;
+    margin-right: 40px;
+    margin-left: 10px;
+
+}
+
+#menu .logo h2{
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #4d0f0f;
+    cursor: pointer;
+}
+
+
+
+#menu .items li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i, 
+#menu .items li:hover a
+{
+    color: #F3F4F6;
+    cursor: pointer;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #910702;
+    position: fixed;
+    width: calc(100% - 300px);
+    z-index: 1000;
+}
+
+#interface .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+
+
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead th{
+    position: relative;
+    top: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #d0d0d0;
+    text-align: center;
+    padding: 15px;
+}
+
+tbody tr td{
+    font-size: 14px;
+    padding: 10px 15px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.present-table, .absent-table {
+    width: 94%;
+    margin: 10px 30px 10px 30px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    max-height: 100vb;
+}
+
+.topic {
+    margin: 3vb 4vb 0;
+}
+.graphs {
+    display: flex;
+    justify-content: space-around; /* Distributes space between and around content items */
+    align-items: center; /* Vertically center items in the container */
+    flex-wrap: wrap; /* Allows items to wrap to the next line as needed */
+    padding: 20px;
+}
+.graph-1 {
+    display: flex;
+}
+.graph-1, .graph-2 {
+    flex: 1 1 50%; /* Allows each graph to take half of the container's width */
+    padding: 10px;
+    box-sizing: border-box; /* Includes padding and border in the element's width and height */
+}
+
+canvas {
+    height: auto !important; /* Adjusts height automatically based on width to maintain aspect ratio */
+}
+
+.prevMonth, .nextMonth {
+    height: 50px;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #4d0f0f;
+}
+#monthlyAttendanceChart {
+    width: 15vb;  
+}
+.chart-label {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.logout-icon {
+    color: black; /* Changes icon color to black */
+    font-size: 16px; /* Smaller icon size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+.logout-icon:hover {
+    color: rgb(80, 0, 0); /* Changes hover color to grey */
+}
+.logout {
+    margin-left: 1100px; /* This will push the logout icon to the far right */
+}

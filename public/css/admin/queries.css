@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #ebeaea;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: #6a0602;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+    width: 220px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#menu .logo h2{
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #4d0f0f;
+    cursor: pointer;
+}
+
+#menu .items li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i, 
+#menu .items li:hover a
+{
+    color: #F3F4F6;
+    cursor: pointer;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#menu .items li:nth-child(6){
+    border-left: 4px solid #fff;
+    background: #4d0f0f;
+}
+
+#menu .items li:nth-child(6) i{
+    color: #F3F4F6;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #910702;
+    position: fixed;
+    width: calc(100% - 300px);
+    z-index: 1000;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logout-icon {
+    color: black; /* Changes icon color to black */
+    font-size: 16px; /* Smaller icon size */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Ensures no underline appears */
+}
+
+.logout-icon:hover {
+    color: rgb(80, 0, 0); /* Changes hover color to grey */
+}
+.logout {
+    margin-left: 1100px; /* This will push the logout icon to the far right */
+}
+
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.i2-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.values {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start; /* Align boxes to the start of the container */
+    align-items: center;
+    flex-wrap: wrap; /* Allows boxes to wrap onto the next line */
+    gap: 20px; /* Adds space between the boxes */
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.values .val-box {
+    background: #fff;
+    flex: 1; /* Each box will take equal space */
+    min-width: 235px; /* Minimum width before wrapping */
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional shadow for depth */
+}
+
+.values .val-box i {
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background-color: #6a0602; /* Background color for icons to make them stand out */
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) i{
+    background: rgb(86, 62, 196);
+}
+
+.values .val-box:nth-child(2) i{
+    background: rgb(219, 73, 185); 
+}
+
+.values .val-box:nth-child(3) i{
+    background: rgb(129, 53, 201);
+}
+
+.values .val-box:nth-child(4) i{
+    background: rgb(76, 130, 205);
+}
+
+.values .val-box h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span{
+    font-size: 15px;
+    color: #828997;
+}
+
+.people {
+    width: 95%;
+    margin: 30px 0 30px 30px;
+    margin-bottom: 0;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+    display: inline-block;
+    max-height: 400px; /* height of the table body*/
+}
+
+.people h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.people p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+tr{
+    border-bottom: 1px solid #eef0f3;
+}
+
+thead th{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #d0d0d0;
+    text-align: center;
+    padding: 15px;
+}
+
+tbody tr td{
+    font-size: 14px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.active p{
+    background: #d7fada;
+    padding: 2px 10px;
+    display: inline-block;
+    border-radius: 40px;
+    color: #2b2b2b;
+}
+
+.edit i, .delete i {
+    font-size: 16px; /* Adjust size as needed */
+    color: black; /* Default color */
+    cursor: pointer; /* Pointer to indicate clickable */
+}
+
+.edit i:hover, .delete i:hover {
+    color: #555; /* Darker shade on hover for better interaction feedback */
+}
+
+
+/* add - form*/
+form {
+    margin: 30px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    color: #444a53;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"], input[type="date"] {
+    width: calc(100% - 10px);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    margin-bottom: 12px; 
+    transition: border-color 0.3s ease;
+    height: 30px;
+}
+
+input[type="submit"] {
+    background: #0e631b;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: #acabab;
+}
+
+.update-labels {
+    display: flex;
+    justify-content: space-between; /* Adjust space between elements */
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column; /* Aligns label on top of input */
+    margin-right: 20px; /* Spacing between label-input groups */
+    flex-basis: 48%; /* Takes up less than half the container width */
+}
+
+.form-row label, .form-row input {
+    display: block;
+    width: 100%;
+}
+
+.highlight {
+    background-color: #c9eccf; /* Light yellow background for highlighting */
+}
+
+/* Search input styling to match the rest of the interface */
+#searchInput {
+    border: 1px solid #ccc; /* Light grey border that blends well with the design */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    padding: 10px 15px; /* Adequate padding for typing comfort */
+    font-size: 14px; /* Font size that matches your form inputs */
+    width: calc(100% - 30px); /* Adjusted width to align with table, considering padding */
+    margin: 5px 0px 10px 30px; /* Margin to align with table horizontally */
+    margin-top: 40px;
+    margin-bottom: 0px;
+    width: 95%;
+    font-family: 'Poppins', sans-serif; /* Consistent font style */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05); /* Very subtle inner shadow for depth */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}
+
+#searchInput:focus {
+    border-color: #910702; /* Highlight color when focused */
+    box-shadow: 0 0 5px rgba(145, 7, 2, 0.1); /* Reduced glow effect to be less prominent */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* update - form*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebeaea;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+
+    /* mobile */
+    @media screen and (max-width: 768px) {
+        margin: 20% auto;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+.modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-content .close:hover,
+.modal-content .close:focus {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content .map-canvas {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    position: fixed;
+}
+.modal-header {
+    padding-bottom: 10px; /* Space between header and body */
+    border-bottom: 2px solid #333333; /* Subtle separation */
+}
+
+.modal-header .close {
+    float: right;
+    font-size: 28px;
+    color: #aaaaaa;
+    cursor: pointer;
+}
+
+.modal-header .close:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+.i3-name { /* Adjusting modal title styling */
+    font-size: 20px; /* Reduced font size */
+    font-weight: 700; /* Adjusting weight for better appearance */
+    color: #444;
+    margin: 0; /* Removes any default margin for tighter control */
+}
+
+/* Styling form elements within the modal */
+.update-form1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.update-form2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.update-form2 label {
+    margin-right: 10px; /* Spacing between label and input */
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+}
+
+.update-form2 input[type="text"] {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.update-form5 {
+    text-align: right; /* Centering the button */
+}
+
+.btn-update {
+    background-color: #d0d0d0;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    float: right; /* Ensures the button floats to the right within its container */
+}
+
+.btn-update:hover {
+    background-color: #acabab; /* Darker grey on hover */
+}
+
+.update-form5:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.update-form6 {
+    text-align: right; /* Aligns the button to the right of the form */
+    padding-right: 10px; /* Ensures there is padding from the right edge of the form */
+}
+
+.add-member-button {
+    background-color: #6a0602; /* Matching the menu's red color */
+    color: white; /* White text color for clarity */
+    border: none; /* No border for a smoother appearance */
+    padding: 8px 18px; /* Reduced padding for a smaller button size */
+    border-radius: 4px; /* Slightly rounded corners */
+    font-size: 14px; /* Smaller font size */
+    cursor: pointer; /* Indicates the button is clickable */
+    transition: background-color 0.2s, transform 0.2s; /* Smooth transition for interactions */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+.add-member-button:hover {
+    background-color: #4d0f0f; /* A darker shade of red on hover */
+    transform: translateY(-1px); /* Subtle lift effect on hover */
+    box-shadow: 0 3px 5px rgba(0,0,0,0.2); /* Enhanced shadow on hover for more depth */
+}
+
+.add-member-button:active {
+    background-color: #380000; /* Dark red when the button is pressed */
+    transform: translateY(0px); /* Neutral position on click */
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1); /* Less shadow to mimic pressing down */
+}
+
+.i-button {
+    margin-left: 30px; /* Additional left padding for the button container */
+    padding-bottom: 30px;
+    padding-bottom: 40px;
+}

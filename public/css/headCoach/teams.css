@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: #ebeaea;
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background: #6a0602;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .logo img{
+    width: 220px;
+    margin-right: 40px;
+    margin-left: 10px;
+}
+
+#menu .logo h2{
+    font-family: 'Times New Roman';
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li{
+    list-style: none;
+    padding: 15px 0;
+    transition: 0.3s ease;
+}
+
+#menu .items li:hover{
+    background: #4d0f0f;
+    cursor: pointer;
+}
+
+#menu .items li:nth-child(3){
+  border-left: 4px solid #fff;
+  background: #4d0f0f;
+}
+#menu .items li:nth-child(3) i{
+  color: #F3F4F6;
+}
+
+#menu .items li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i, 
+#menu .items li:hover a
+{
+    color: #F3F4F6;
+    cursor: pointer;
+}
+
+#menu .items li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 300px;
+    transition: 0.3s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position:absolute;
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #910702;
+    position: fixed;
+    width: calc(100% - 300px);
+}
+
+#interface .navigation .search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i {
+    margin-right: 14px;
+}
+
+#interface .navigation .search input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+#interface .navigation .profile{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#interface .navigation .profile i {
+    margin-right: 20px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+#interface .navigation .profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.n1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.i-name{
+    color: #444a53;
+    padding: 30px 30px 0 30px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 70px;
+}
+
+.values{
+    padding: 30px 30px 0 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 655px;
+}
+
+.values .val-box{
+    background: #fff;
+    width: 280px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.values .val-box i{
+    font-size: 25px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.values .val-box:nth-child(1) i{
+    background: rgb(86, 62, 196);
+}
+
+.values .val-box:nth-child(2) i{
+    background: rgb(219, 73, 185); 
+}
+
+.values .val-box:nth-child(3) i{
+    background: rgb(129, 53, 201);
+}
+
+.values .val-box:nth-child(4) i{
+    background: rgb(76, 130, 205);
+}
+
+.values .val-box h3{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.values .val-box span{
+    font-size: 15px;
+    color: #828997;
+}
+
+.people {
+    width: 94%;
+    margin: 30px 0 30px 30px;
+    overflow: auto;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.people h5{
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.people p{
+    font-weight: 400;
+    font-size: 13px;
+    color: #787d8d;
+}
+
+.team_table{
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.team_table tr{
+    border-bottom: 1px solid #eef0f3;
+}
+
+.team_table thead td{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    background: #f9faf8;
+    text-align: start;
+    padding: 15px;
+    text-align: center;
+    
+}
+
+.team_table tbody tr td{
+    padding: 10px 15px;
+}
+
+.active p{
+    background: #d7fada;
+    padding: 2px 10px;
+    display: block;
+    border-radius: 40px;
+    color: #2b2b2b;
+    max-width: 160px;
+}
+
+
+.table_but a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #373737;
+    font-weight: 600;
+}
+
+.delete a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #e20c0c;
+    font-weight: 600;
+}
+
+.table_but {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 5px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 12px 12px;
+    cursor: pointer;
+    color: black;
+    border-radius: 10px;
+    /* height: 40px; */
+    width: 75px;
+  }
+
+  .table_but:hover {
+    background-color: #01c27b;
+  }
+
+  .add_but {
+    background-color: rgb(72, 118, 255);
+  }
+
+  .del_but {
+    background-color: rgb(255, 81, 72);
+  }
+
+  .add_but:hover {
+    background-color: rgb(106, 144, 255);
+  }
+
+  .del_but:hover {
+    background-color: rgb(255, 111, 103);
+  }
+ 
+
+  /* new popup */
+
+  /* update - form*/
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+
+  }
+  
+  .modal-content {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebeaea;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #cccccc;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+  
+    /* mobile */
+    @media screen and (max-width: 768px) {
+        margin: 20% auto;
+        width: 100%;
+        padding: 10px;
+    }
+  }
+  
+  .modal-content .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .modal-content .close:hover,
+  .modal-content .close:focus {
+    color: #333333;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-content .map-canvas {
+    width: 100%;
+    height: 300px;
+    border-radius: 4px;
+    position: fixed;
+  }
+  .modal-header {
+    padding-bottom: 10px; /* Space between header and body */
+    border-bottom: 2px solid #333333; /* Subtle separation */
+  }
+  
+  .modal-header .close {
+    float: right;
+    font-size: 28px;
+    color: #aaaaaa;
+    cursor: pointer;
+  }
+  
+  .modal-header .close:hover {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .i3-name { /* Adjusting modal title styling */
+    font-size: 20px; /* Reduced font size */
+    font-weight: 700; /* Adjusting weight for better appearance */
+    color: #444;
+    margin: 0; /* Removes any default margin for tighter control */
+  }
+  
+  /* Styling form elements within the modal */
+  .update-form1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .update-form2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .update-form2 label {
+    margin-right: 10px; /* Spacing between label and input */
+    font-size: 16px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .update-form2 input[type="text"] {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .update-form2 input[type="number"] {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .update-form2 input[type="email"] {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .update-form2 p {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .selectOne{
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+
+  .drop-down {
+    width: 75%; /* Allocating width for input */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .update-form5 {
+    text-align: right; /* Centering the button */
+  }
+  
+  .btn-update {
+    background-color: #d0d0d0;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    float: right; /* Ensures the button floats to the right within its container */
+  }
+  
+  .btn-update:hover {
+    background-color: #acabab; /* Darker grey on hover */
+  }
+  
+  .update-form5:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .update-form6 {
+    text-align: right; /* Aligns the button to the right of the form */
+    padding-right: 20px; /* Ensures there is padding from the right edge of the form */
+  }
+
+      /* Add Button */
+      .add-button {
+        background-color: #04AA6D; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .add-button:hover {
+        background-color: #04aa6dcb; /* Darker Green */
+    }
+
+    /* Delete Button */
+    .delete-button {
+        background-color: #6a0602; /* Red */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .delete-button:hover {
+        background-color: #6a0502ba; /* Darker Red */
+    }
+
+    .add-del-buts{
+        margin-left: 30px;
+    }
+
+    .go-back-button{
+        background-color: rgb(86, 62, 196);
+    }
+
+    .go-back-button:hover{
+        background-color: rgba(87, 62, 196, 0.652);
+    }
+
+    .go-back{
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    .matches_but{
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .match-table{
+        margin-top: 0px;
+    }
+
+    .logout-icon {
+      color: black; /* Changes icon color to black */
+      font-size: 16px; /* Smaller icon size */
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none; /* Ensures no underline appears */
+  }
+  
+  .logout-icon:hover {
+      color: rgb(80, 0, 0); /* Changes hover color to grey */
+  }
+  .logout {
+      margin-left: 1100px; /* This will push the logout icon to the far right */
+  }
+  

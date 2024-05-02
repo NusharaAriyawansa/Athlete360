@@ -1,0 +1,17 @@
+CREATE TABLE users (
+    userID INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    role VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE members (
+    memberID INT AUTO_INCREMENT PRIMARY KEY,
+    userID INT,
+    school VARCHAR(100),
+    grade VARCHAR(10),
+    FOREIGN KEY (userID) REFERENCES users(userID)
+);
+
+
