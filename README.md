@@ -12,4 +12,4 @@ Functionalities:
 6) Reports and Analytics: The system generates various reports such as financial reports, performance reports, and attendance reports to provide insights for informed decision-making.
 7) Notification Management: Automated notifications are sent by the system for booking confirmations, payment reminders, and coach salary notifications, enhancing communication efficiency.
 
-Technology stack: HTML5, CSS, Vanilla JavaScript, PHP, MySQL, GitHub
+Technology stack: HTML5, CSS3, Vanilla JavaScript, PHP, MySQL, GitHub
